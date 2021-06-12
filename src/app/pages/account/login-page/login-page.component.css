@@ -1,0 +1,10 @@
+.uk-form-danger {
+  border: 2px solid #ff0000 !important;
+}
+
+button:disabled {
+  background-color: #c0c0c0 !important;
+  border: solid 2px;
+  border-color: #ff0005;
+
+}

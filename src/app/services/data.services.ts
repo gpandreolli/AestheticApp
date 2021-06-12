@@ -7,13 +7,20 @@ import { Product } from '../models/product.model';
   providedIn: 'root'
 })
 export class DataService {
+
+  public url = 'http://localhost:3010';
     
     constructor(private http: HttpClient) {}    
 
     getProducts(){
         debugger;
-        return this.http.get<Product[]>('http://localhost:3001/v1/clinic/products');
+        return this.http.get<Product[]>(`${this.url}/clinic/products`);
     }
+
+    authenticate(data){
+      return this.http.post(`${this.url}/accounts/authenticate`,data);
+  }
+    
         
     
   

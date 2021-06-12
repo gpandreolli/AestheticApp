@@ -13,7 +13,9 @@ import { FramePageComponent } from './pages/master/frame.page';
 import { AttendancePageComponent } from './pages/clinic/attendance-page/attendance-page.component';
 import { CostumersPageComponent } from './pages/clinic/costumers-page/costumers-page.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ProductListComponent } from './components/clinic/product-list/product-list.component'
+import { ProductListComponent } from './components/clinic/product-list/product-list.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ServiceListComponent } from './components/clinic/service-list/service-list.component';
 
 
 @NgModule({
@@ -30,12 +32,14 @@ import { ProductListComponent } from './components/clinic/product-list/product-l
     AttendancePageComponent,
     CostumersPageComponent,
     ProductListComponent,
+    ServiceListComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
