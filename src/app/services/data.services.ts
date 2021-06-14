@@ -19,8 +19,12 @@ export class DataService {
 
     authenticate(data){
       return this.http.post(`${this.url}/accounts/authenticate`,data);
-  }
-    
+    }
+
+    saveProducts(data){
+      return this.http.post(`${this.url}/clinic/products`,data);
+    }
+
         
     
   

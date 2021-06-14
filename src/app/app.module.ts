@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginPageComponent } from './pages/account/login-page/login-page.component';
@@ -36,10 +40,14 @@ import { ServiceListComponent } from './components/clinic/service-list/service-l
     
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
+    BrowserModule,    
+    ReactiveFormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule,
+    AppRoutingModule
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
