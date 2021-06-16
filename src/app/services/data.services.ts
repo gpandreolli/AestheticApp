@@ -22,6 +22,7 @@ export class DataService {
     }
 
     saveProducts(data){
+      debugger;
       return this.http.post(`${this.url}/clinic/products`,data);
     }
 
