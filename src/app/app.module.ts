@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductListComponent } from './components/clinic/product-list/product-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ServiceListComponent } from './components/clinic/service-list/service-list.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 @NgModule({
@@ -45,8 +46,8 @@ import { ServiceListComponent } from './components/clinic/service-list/service-l
     HttpClientModule,
     ToastrModule.forRoot(),
     BrowserAnimationsModule,
-    AppRoutingModule
-    
+    AppRoutingModule,
+    NgxPaginationModule,
     
   ],
   providers: [],
